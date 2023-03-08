@@ -20,4 +20,5 @@ from todos import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('todos/', views.task_list),
+    path('todos/<int:id>', views.task_detail),
 ]
